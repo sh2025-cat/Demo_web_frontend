@@ -1,14 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
+import { CatBoard } from '@/components/CatBoard'
 
 function App() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-orange-50/50">
       <Routes>
-        <Route path="/" element={
-          <div className="flex items-center justify-center min-h-screen">
-            <h1 className="text-4xl font-bold">Cat Board</h1>
-          </div>
-        } />
+        <Route path="/" element={<CatBoard />} />
       </Routes>
     </div>
   )
