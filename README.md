@@ -55,3 +55,19 @@ src/
 ├── App.tsx       # 루트 컴포넌트
 └── main.tsx      # 엔트리 포인트
 ```
+
+## CI/CD
+
+GitHub Actions를 통한 자동 배포 파이프라인:
+
+1. **Test & SAST**: 테스트 실행 및 Snyk 보안 스캔
+2. **Build**: Docker 멀티스테이지 빌드 및 ECR 푸시
+
+### 필요한 Secrets
+
+| Secret | 설명 |
+|--------|------|
+| `AWS_ACCESS_KEY` | AWS 액세스 키 |
+| `AWS_SECRET_KEY` | AWS 시크릿 키 |
+| `SNYK_TOKEN` | Snyk 인증 토큰 |
+| `CICD_WEBHOOK` | 배포 웹훅 URL |
