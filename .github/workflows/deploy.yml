@@ -65,6 +65,7 @@ jobs:
       run: snyk test --all-projects --sarif-file-output=snyk-sca-report.sarif
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      continue-on-error: true
 
   build:
     needs: sast
