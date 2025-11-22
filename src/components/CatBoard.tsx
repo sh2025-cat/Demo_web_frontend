@@ -4,6 +4,7 @@ import { NoteCard } from "@/components/NoteCard"
 import { EmptyState } from "@/components/EmptyState"
 import { useMemos, useCreateMemo, useDeleteMemo } from "@/hooks/useMemos"
 import { memoToNote } from "@/types/memo"
+import SoftbankLogo from "@/assets/Softbank_mobile_logo.svg"
 
 export function CatBoard() {
   const [inputValue, setInputValue] = useState("")
@@ -39,8 +40,8 @@ export function CatBoard() {
       {/* Header Area */}
       <header className="mb-12 text-center">
         <div className="mb-4 flex items-center justify-center gap-3">
-          <span className="text-4xl">😺</span>
-          <h1 className="font-sans text-4xl font-bold tracking-tight text-gray-800">Cat Board</h1>
+          <img src={SoftbankLogo} alt="Softbank Logo" className="h-12 w-auto" />
+          <h1 className="font-sans text-4xl font-bold tracking-tight text-gray-800">Softbank Board</h1>
         </div>
       </header>
 
