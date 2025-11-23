@@ -1,4 +1,4 @@
-# Cat Board Frontend
+# Cat Board Frontend 
 
 React + TypeScript + Vite 기반의 메모 보드 애플리케이션입니다.
 
